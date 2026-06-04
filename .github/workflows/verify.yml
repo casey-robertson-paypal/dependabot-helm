@@ -1,0 +1,41 @@
+name: verify
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          path: dependabot-helm
+      - name: Checkout dependabot-core branch
+        uses: actions/checkout@v4
+        with:
+          repository: casey-robertson-paypal/dependabot-core
+          ref: casey/helm-versioning-strategy
+          path: dependabot-core
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4.8"
+      - name: Install helm
+        uses: azure/setup-helm@v4
+      - name: Install oras
+        uses: oras-project/setup-oras@v1
+      - name: Bundle helm gem
+        working-directory: dependabot-core/helm
+        run: bundle install
+      - name: Run verify matrix
+        working-directory: dependabot-helm
+        env:
+          LOCAL_GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEPENDABOT_CORE: ${{ github.workspace }}/dependabot-core
+        run: ./verify.sh
+      - name: Upload transcripts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dry-run-transcripts
+          path: dependabot-helm/transcripts/*.txt
