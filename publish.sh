@@ -23,11 +23,13 @@ publish() {
   done
 }
 
-publish app-base  1.0.0 1.0.5
-publish cron-base 1.0.0 2.0.0
-publish db-base   1.0.0 1.5.0
+publish app-base  1.0.0 1.0.5        # caret, latest in range
+publish cron-base 1.0.0 2.0.0        # caret, latest out of range
+publish db-base   1.0.0 1.5.0        # exact pin
+publish web-base  1.2.0 1.2.9        # tilde, latest in range
+publish api-base  1.0.0 1.5.0 2.5.0  # explicit range, latest out of range
 
 echo
-echo "Done. Now set the GHCR packages (app-base, cron-base, db-base) to PUBLIC"
+echo "Done. Now set the GHCR packages (app-base, cron-base, db-base, web-base, api-base) to PUBLIC"
 echo "so dry-run can pull unauthenticated:"
 echo "  https://github.com/users/casey-robertson-paypal/packages"

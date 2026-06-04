@@ -40,21 +40,27 @@ summarize() {
     echo
     echo "| Dependency | Constraint | increase | increase-if-necessary | widen |"
     echo "|---|---|---|---|---|"
-    while read -r dep constraint; do
+    while IFS=$'\t' read -r dep constraint; do
       local row="| \`$dep\` | \`$constraint\` |"
       for s in bump_versions bump_versions_if_necessary widen_ranges; do
         local newreq
         newreq="$(awk -v d="$dep" '
           $0 ~ ("=> bump " d " from ") { cap = 1; next }
           cap && /^[[:space:]]*\+[[:space:]]+version:/ {
-            sub(/^.*version:[[:space:]]*/, ""); print; cap = 0
+            sub(/^.*version:[[:space:]]*/, ""); gsub(/^["'\''"]|["'\''"]$/, ""); print; cap = 0
           }
         ' "$ROOT/transcripts/$s.txt" | head -1)"
         if [ -n "$newreq" ]; then row="$row \`$newreq\` |"; else row="$row no change |"; fi
       done
       echo "$row"
-    done < <(awk '/- name:/{name=$3} /^[[:space:]]*version:/{if(name!=""){print name, $2; name=""}}' \
-                  "$ROOT/consumer/Chart.yaml")
+    done < <(awk '
+      /- name:/ { name = $3 }
+      /^[[:space:]]*version:/ {
+        if (name != "") {
+          v = $0; sub(/^[[:space:]]*version:[[:space:]]*/, "", v); gsub(/^["'\'']|["'\'']$/, "", v)
+          print name "\t" v; name = ""
+        }
+      }' "$ROOT/consumer/Chart.yaml")
   )"
   echo
   echo "$md" | tee "$ROOT/transcripts/SUMMARY.md"
