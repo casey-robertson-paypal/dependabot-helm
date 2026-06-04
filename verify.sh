@@ -30,13 +30,13 @@ done
 
 # Build a human-readable matrix from the transcripts. For each dependency in the
 # consumer chart, show the new requirement written under each strategy, or
-# "no change" when the resolved version already satisfies the constraint.
+# "no PR" when the resolved version already satisfies the constraint.
 summarize() {
   local md
   md="$(
     echo "## Helm \`versioning-strategy\` dry-run results"
     echo
-    echo "Repo \`$REPO\`, directory \`/consumer\`. \"no change\" = no PR proposed (latest already in range)."
+    echo "Repo \`$REPO\`, directory \`/consumer\`. \"no PR\" = no update proposed (latest already in range)."
     echo
     echo "| Dependency | Constraint | increase | increase-if-necessary | widen |"
     echo "|---|---|---|---|---|"
@@ -50,7 +50,7 @@ summarize() {
             sub(/^.*version:[[:space:]]*/, ""); gsub(/^["'\''"]|["'\''"]$/, ""); print; cap = 0
           }
         ' "$ROOT/transcripts/$s.txt" | head -1)"
-        if [ -n "$newreq" ]; then row="$row \`$newreq\` |"; else row="$row no change |"; fi
+        if [ -n "$newreq" ]; then row="$row \`$newreq\` |"; else row="$row no PR |"; fi
       done
       echo "$row"
     done < <(awk '
