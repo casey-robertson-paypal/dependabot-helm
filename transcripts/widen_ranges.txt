@@ -1,0 +1,170 @@
+warning: parser/current is loading parser/ruby34, which recognizes 3.4.0-dev-compliant syntax, but you are running 3.4.8.
+Please see https://github.com/whitequark/parser#compatibility-with-ruby-mri.
+D, [2026-06-03T21:09:11.434329 #61852] DEBUG -- : Started process PID: 61949 with command: {} git config --global credential.helper '!/Users/DNQ7PPV/github-casey-robertson-paypal/dependabot-core/common/lib/dependabot/../../bin/git-credential-store-immutable --file /Users/DNQ7PPV/github-casey-robertson-paypal/dependabot-core/5c55e4238c52f31b9b6559ba74be251d.git.store' {}
+D, [2026-06-03T21:09:11.461881 #61852] DEBUG -- : Process PID: 61949 completed with status: pid 61949 exit 0
+D, [2026-06-03T21:09:11.461933 #61852] DEBUG -- : Total execution time: 0.03 seconds
+D, [2026-06-03T21:09:11.465955 #61852] DEBUG -- : Started process PID: 61953 with command: {} git config --global --replace-all url.https://github.com/.insteadOf ssh://git@github.com/ {}
+D, [2026-06-03T21:09:11.481077 #61852] DEBUG -- : Process PID: 61953 completed with status: pid 61953 exit 0
+D, [2026-06-03T21:09:11.481139 #61852] DEBUG -- : Total execution time: 0.02 seconds
+D, [2026-06-03T21:09:11.484652 #61852] DEBUG -- : Started process PID: 61956 with command: {} git config --global --add url.https://github.com/.insteadOf ssh://git@github.com: {}
+D, [2026-06-03T21:09:11.501785 #61852] DEBUG -- : Process PID: 61956 completed with status: pid 61956 exit 0
+D, [2026-06-03T21:09:11.501850 #61852] DEBUG -- : Total execution time: 0.02 seconds
+D, [2026-06-03T21:09:11.505877 #61852] DEBUG -- : Started process PID: 61957 with command: {} git config --global --add url.https://github.com/.insteadOf git@github.com: {}
+D, [2026-06-03T21:09:11.525290 #61852] DEBUG -- : Process PID: 61957 completed with status: pid 61957 exit 0
+D, [2026-06-03T21:09:11.525350 #61852] DEBUG -- : Total execution time: 0.02 seconds
+D, [2026-06-03T21:09:11.529751 #61852] DEBUG -- : Started process PID: 61958 with command: {} git config --global --add url.https://github.com/.insteadOf git@github.com/ {}
+D, [2026-06-03T21:09:11.550886 #61852] DEBUG -- : Process PID: 61958 completed with status: pid 61958 exit 0
+D, [2026-06-03T21:09:11.550956 #61852] DEBUG -- : Total execution time: 0.03 seconds
+D, [2026-06-03T21:09:11.555046 #61852] DEBUG -- : Started process PID: 61959 with command: {} git config --global --add url.https://github.com/.insteadOf git://github.com/ {}
+D, [2026-06-03T21:09:11.572671 #61852] DEBUG -- : Process PID: 61959 completed with status: pid 61959 exit 0
+D, [2026-06-03T21:09:11.572727 #61852] DEBUG -- : Total execution time: 0.02 seconds
+=> cloning into /Users/DNQ7PPV/github-casey-robertson-paypal/dependabot-core/tmp/casey-robertson-paypal/dependabot-helm
+D, [2026-06-03T21:09:11.603910 #61852] DEBUG -- : Started process PID: 61961 with command: {} git config --global credential.helper '!/Users/DNQ7PPV/github-casey-robertson-paypal/dependabot-core/common/lib/dependabot/../../bin/git-credential-store-immutable --file /Users/DNQ7PPV/github-casey-robertson-paypal/dependabot-core/4839e4e0dbe18ac403b0c7fd7c969df1.git.store' {}
+D, [2026-06-03T21:09:11.639531 #61852] DEBUG -- : Process PID: 61961 completed with status: pid 61961 exit 0
+D, [2026-06-03T21:09:11.639585 #61852] DEBUG -- : Total execution time: 0.04 seconds
+D, [2026-06-03T21:09:11.643307 #61852] DEBUG -- : Started process PID: 61962 with command: {} git config --global --replace-all url.https://github.com/.insteadOf ssh://git@github.com/ {}
+D, [2026-06-03T21:09:11.661267 #61852] DEBUG -- : Process PID: 61962 completed with status: pid 61962 exit 0
+D, [2026-06-03T21:09:11.661320 #61852] DEBUG -- : Total execution time: 0.02 seconds
+D, [2026-06-03T21:09:11.665107 #61852] DEBUG -- : Started process PID: 61964 with command: {} git config --global --add url.https://github.com/.insteadOf ssh://git@github.com: {}
+D, [2026-06-03T21:09:11.684615 #61852] DEBUG -- : Process PID: 61964 completed with status: pid 61964 exit 0
+D, [2026-06-03T21:09:11.684670 #61852] DEBUG -- : Total execution time: 0.02 seconds
+D, [2026-06-03T21:09:11.688711 #61852] DEBUG -- : Started process PID: 61966 with command: {} git config --global --add url.https://github.com/.insteadOf git@github.com: {}
+D, [2026-06-03T21:09:11.707431 #61852] DEBUG -- : Process PID: 61966 completed with status: pid 61966 exit 0
+D, [2026-06-03T21:09:11.707485 #61852] DEBUG -- : Total execution time: 0.02 seconds
+D, [2026-06-03T21:09:11.711133 #61852] DEBUG -- : Started process PID: 61968 with command: {} git config --global --add url.https://github.com/.insteadOf git@github.com/ {}
+D, [2026-06-03T21:09:11.727875 #61852] DEBUG -- : Process PID: 61968 completed with status: pid 61968 exit 0
+D, [2026-06-03T21:09:11.727922 #61852] DEBUG -- : Total execution time: 0.02 seconds
+D, [2026-06-03T21:09:11.731667 #61852] DEBUG -- : Started process PID: 61969 with command: {} git config --global --add url.https://github.com/.insteadOf git://github.com/ {}
+D, [2026-06-03T21:09:11.750419 #61852] DEBUG -- : Process PID: 61969 completed with status: pid 61969 exit 0
+D, [2026-06-03T21:09:11.750464 #61852] DEBUG -- : Total execution time: 0.02 seconds
+I, [2026-06-03T21:09:11.754668 #61852]  INFO -- : Started process PID: 61970 with command: {} git clone --no-tags --depth 1 --recurse-submodules --shallow-submodules https://github.com/casey-robertson-paypal/dependabot-helm /Users/DNQ7PPV/github-casey-robertson-paypal/dependabot-core/tmp/casey-robertson-paypal/dependabot-helm {}
+I, [2026-06-03T21:09:12.592061 #61852]  INFO -- : Process PID: 61970 completed with status: pid 61970 exit 0
+I, [2026-06-03T21:09:12.592116 #61852]  INFO -- : Total execution time: 0.84 seconds
+I, [2026-06-03T21:09:12.595973 #61852]  INFO -- : Started process PID: 62026 with command: {} git -C /Users/DNQ7PPV/github-casey-robertson-paypal/dependabot-core/tmp/casey-robertson-paypal/dependabot-helm ls-files --stage {}
+I, [2026-06-03T21:09:12.613351 #61852]  INFO -- : Process PID: 62026 completed with status: pid 62026 exit 0
+I, [2026-06-03T21:09:12.613413 #61852]  INFO -- : Total execution time: 0.02 seconds
+=> parsing dependency files
+=> updating 3 dependencies: app-base, cron-base, db-base
+
+=== app-base (^1.0.0)
+ => checking for updates 1/3
+I, [2026-06-03T21:09:12.619034 #61852]  INFO -- : Attempting to search for app-base using helm CLI
+I, [2026-06-03T21:09:12.619068 #61852]  INFO -- : Fetching releases for Helm chart: app-base
+I, [2026-06-03T21:09:12.619097 #61852]  INFO -- : Adding Helm repository: oci---ghcr-io-casey-robertson-paypal-dependabot-helm (oci://ghcr.io/casey-robertson-paypal/dependabot-helm)
+I, [2026-06-03T21:09:12.623614 #61852]  INFO -- : Started process PID: 62027 with command: {} helm repo add oci---ghcr-io-casey-robertson-paypal-dependabot-helm oci://ghcr.io/casey-robertson-paypal/dependabot-helm {}
+I, [2026-06-03T21:09:12.655476 #61852]  INFO -- : Process PID: 62027 completed with status: pid 62027 exit 1
+I, [2026-06-03T21:09:12.655541 #61852]  INFO -- : Total execution time: 0.04 seconds
+E, [2026-06-03T21:09:12.655839 #61852] ERROR -- : Error adding/updating Helm repository: Error: looks like "oci://ghcr.io/casey-robertson-paypal/dependabot-helm" is not a valid chart repository or cannot be reached: object required
+I, [2026-06-03T21:09:12.655845 #61852]  INFO -- : Searching for: oci---ghcr-io-casey-robertson-paypal-dependabot-helm/app-base
+I, [2026-06-03T21:09:12.655886 #61852]  INFO -- : Searching Helm repository for: oci---ghcr-io-casey-robertson-paypal-dependabot-helm/app-base
+I, [2026-06-03T21:09:12.659340 #61852]  INFO -- : Started process PID: 62029 with command: {} helm search repo oci---ghcr-io-casey-robertson-paypal-dependabot-helm/app-base --versions --output\=json {}
+I, [2026-06-03T21:09:14.017525 #61852]  INFO -- : Process PID: 62029 completed with status: pid 62029 exit 0
+I, [2026-06-03T21:09:14.017570 #61852]  INFO -- : Total execution time: 1.36 seconds
+I, [2026-06-03T21:09:14.017607 #61852]  INFO -- : Found 0 releases for app-base
+I, [2026-06-03T21:09:14.017772 #61852]  INFO -- : Fetching OCI tags for oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+I, [2026-06-03T21:09:14.017814 #61852]  INFO -- : Searching OCI tags for: ghcr.io/casey-robertson-paypal/dependabot-helm/app-base
+I, [2026-06-03T21:09:14.022031 #61852]  INFO -- : Started process PID: 62066 with command: {} oras repo tags ghcr.io/casey-robertson-paypal/dependabot-helm/app-base {}
+I, [2026-06-03T21:09:14.717649 #61852]  INFO -- : Process PID: 62066 completed with status: pid 62066 exit 0
+I, [2026-06-03T21:09:14.717699 #61852]  INFO -- : Total execution time: 0.7 seconds
+I, [2026-06-03T21:09:14.718589 #61852]  INFO -- : Highest valid OCI tag for app-base is 1.0.5
+ => latest available version is 1.0.5
+ => latest allowed version is 1.0.5
+ => requirements to unlock: update_not_possible
+ => requirements update strategy: #<Dependabot::RequirementsUpdateStrategy::WidenRanges>
+    (no update possible 🙅‍♀️)
+
+=== cron-base (^1.0.0)
+ => checking for updates 2/3
+I, [2026-06-03T21:09:14.719702 #61852]  INFO -- : Attempting to search for cron-base using helm CLI
+I, [2026-06-03T21:09:14.719710 #61852]  INFO -- : Fetching releases for Helm chart: cron-base
+I, [2026-06-03T21:09:14.719714 #61852]  INFO -- : Adding Helm repository: oci---ghcr-io-casey-robertson-paypal-dependabot-helm (oci://ghcr.io/casey-robertson-paypal/dependabot-helm)
+I, [2026-06-03T21:09:14.724177 #61852]  INFO -- : Started process PID: 62115 with command: {} helm repo add oci---ghcr-io-casey-robertson-paypal-dependabot-helm oci://ghcr.io/casey-robertson-paypal/dependabot-helm {}
+I, [2026-06-03T21:09:14.757823 #61852]  INFO -- : Process PID: 62115 completed with status: pid 62115 exit 1
+I, [2026-06-03T21:09:14.757874 #61852]  INFO -- : Total execution time: 0.04 seconds
+E, [2026-06-03T21:09:14.757998 #61852] ERROR -- : Error adding/updating Helm repository: Error: looks like "oci://ghcr.io/casey-robertson-paypal/dependabot-helm" is not a valid chart repository or cannot be reached: object required
+I, [2026-06-03T21:09:14.758005 #61852]  INFO -- : Searching for: oci---ghcr-io-casey-robertson-paypal-dependabot-helm/cron-base
+I, [2026-06-03T21:09:14.758012 #61852]  INFO -- : Searching Helm repository for: oci---ghcr-io-casey-robertson-paypal-dependabot-helm/cron-base
+I, [2026-06-03T21:09:14.761368 #61852]  INFO -- : Started process PID: 62116 with command: {} helm search repo oci---ghcr-io-casey-robertson-paypal-dependabot-helm/cron-base --versions --output\=json {}
+I, [2026-06-03T21:09:16.118448 #61852]  INFO -- : Process PID: 62116 completed with status: pid 62116 exit 0
+I, [2026-06-03T21:09:16.118501 #61852]  INFO -- : Total execution time: 1.36 seconds
+I, [2026-06-03T21:09:16.118521 #61852]  INFO -- : Found 0 releases for cron-base
+I, [2026-06-03T21:09:16.118534 #61852]  INFO -- : Fetching OCI tags for oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+I, [2026-06-03T21:09:16.118543 #61852]  INFO -- : Searching OCI tags for: ghcr.io/casey-robertson-paypal/dependabot-helm/cron-base
+I, [2026-06-03T21:09:16.122845 #61852]  INFO -- : Started process PID: 62148 with command: {} oras repo tags ghcr.io/casey-robertson-paypal/dependabot-helm/cron-base {}
+I, [2026-06-03T21:09:16.815174 #61852]  INFO -- : Process PID: 62148 completed with status: pid 62148 exit 0
+I, [2026-06-03T21:09:16.815223 #61852]  INFO -- : Total execution time: 0.7 seconds
+I, [2026-06-03T21:09:16.815481 #61852]  INFO -- : Highest valid OCI tag for cron-base is 2.0.0
+ => latest available version is 2.0.0
+ => latest allowed version is 2.0.0
+ => requirements to unlock: own
+ => requirements update strategy: #<Dependabot::RequirementsUpdateStrategy::WidenRanges>
+I, [2026-06-03T21:09:17.241825 #61852]  INFO -- : Looking up Docker source oci://ghcr.io/casey-robertson-paypal/dependabot-helm/cron-base:^1.0.0
+I, [2026-06-03T21:09:17.246198 #61852]  INFO -- : Started process PID: 62175 with command: {} regctl image inspect oci://ghcr.io/casey-robertson-paypal/dependabot-helm/cron-base:\^1.0.0 {}
+I, [2026-06-03T21:09:17.273480 #61852]  INFO -- : Process PID: 62175 completed with status: pid 62175 exit 1
+I, [2026-06-03T21:09:17.273537 #61852]  INFO -- : Total execution time: 0.03 seconds
+W, [2026-06-03T21:09:17.273670 #61852]  WARN -- : Error looking up Docker source: invalid reference, unknown scheme "oci" in "oci://ghcr.io/casey-robertson-paypal/dependabot-helm/cron-base:^1.0.0"
+ => bump cron-base from ^1.0.0 to 2.0.0 in /consumer
+
+    ± consumer/Chart.yaml
+    ~~~
+    --- /tmp/claude-502/original20260603-61852-8r6jk2	2026-06-03 21:09:17
+    +++ /tmp/claude-502/updated20260603-61852-7tp26y	2026-06-03 21:09:17
+    @@ -8,7 +8,7 @@
+         version: ^1.0.0
+         repository: oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+       - name: cron-base     # ^1.0.0, highest published 2.0.0 -> OUT of range
+    -    version: ^1.0.0
+    +    version: ^2.0.0
+         repository: oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+       - name: db-base       # exact pin, highest published 1.5.0
+         version: 1.0.0
+    ~~~
+    2 insertions (+), 2 deletions (-)
+
+=== db-base (1.0.0)
+ => checking for updates 3/3
+I, [2026-06-03T21:09:17.287534 #61852]  INFO -- : Attempting to search for db-base using helm CLI
+I, [2026-06-03T21:09:17.287569 #61852]  INFO -- : Fetching releases for Helm chart: db-base
+I, [2026-06-03T21:09:17.287576 #61852]  INFO -- : Adding Helm repository: oci---ghcr-io-casey-robertson-paypal-dependabot-helm (oci://ghcr.io/casey-robertson-paypal/dependabot-helm)
+I, [2026-06-03T21:09:17.291905 #61852]  INFO -- : Started process PID: 62179 with command: {} helm repo add oci---ghcr-io-casey-robertson-paypal-dependabot-helm oci://ghcr.io/casey-robertson-paypal/dependabot-helm {}
+I, [2026-06-03T21:09:17.322724 #61852]  INFO -- : Process PID: 62179 completed with status: pid 62179 exit 1
+I, [2026-06-03T21:09:17.322772 #61852]  INFO -- : Total execution time: 0.04 seconds
+E, [2026-06-03T21:09:17.322872 #61852] ERROR -- : Error adding/updating Helm repository: Error: looks like "oci://ghcr.io/casey-robertson-paypal/dependabot-helm" is not a valid chart repository or cannot be reached: object required
+I, [2026-06-03T21:09:17.322880 #61852]  INFO -- : Searching for: oci---ghcr-io-casey-robertson-paypal-dependabot-helm/db-base
+I, [2026-06-03T21:09:17.322886 #61852]  INFO -- : Searching Helm repository for: oci---ghcr-io-casey-robertson-paypal-dependabot-helm/db-base
+I, [2026-06-03T21:09:17.326316 #61852]  INFO -- : Started process PID: 62181 with command: {} helm search repo oci---ghcr-io-casey-robertson-paypal-dependabot-helm/db-base --versions --output\=json {}
+I, [2026-06-03T21:09:18.682317 #61852]  INFO -- : Process PID: 62181 completed with status: pid 62181 exit 0
+I, [2026-06-03T21:09:18.682374 #61852]  INFO -- : Total execution time: 1.36 seconds
+I, [2026-06-03T21:09:18.682391 #61852]  INFO -- : Found 0 releases for db-base
+I, [2026-06-03T21:09:18.682402 #61852]  INFO -- : Fetching OCI tags for oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+I, [2026-06-03T21:09:18.682410 #61852]  INFO -- : Searching OCI tags for: ghcr.io/casey-robertson-paypal/dependabot-helm/db-base
+I, [2026-06-03T21:09:18.686627 #61852]  INFO -- : Started process PID: 62210 with command: {} oras repo tags ghcr.io/casey-robertson-paypal/dependabot-helm/db-base {}
+I, [2026-06-03T21:09:19.476426 #61852]  INFO -- : Process PID: 62210 completed with status: pid 62210 exit 0
+I, [2026-06-03T21:09:19.476482 #61852]  INFO -- : Total execution time: 0.79 seconds
+I, [2026-06-03T21:09:19.476752 #61852]  INFO -- : Highest valid OCI tag for db-base is 1.5.0
+ => latest available version is 1.5.0
+ => latest allowed version is 1.5.0
+ => requirements to unlock: own
+ => requirements update strategy: #<Dependabot::RequirementsUpdateStrategy::WidenRanges>
+I, [2026-06-03T21:09:19.881128 #61852]  INFO -- : Looking up Docker source oci://ghcr.io/casey-robertson-paypal/dependabot-helm/db-base:1.0.0
+I, [2026-06-03T21:09:19.885622 #61852]  INFO -- : Started process PID: 62237 with command: {} regctl image inspect oci://ghcr.io/casey-robertson-paypal/dependabot-helm/db-base:1.0.0 {}
+I, [2026-06-03T21:09:19.895913 #61852]  INFO -- : Process PID: 62237 completed with status: pid 62237 exit 1
+I, [2026-06-03T21:09:19.895985 #61852]  INFO -- : Total execution time: 0.01 seconds
+W, [2026-06-03T21:09:19.896147 #61852]  WARN -- : Error looking up Docker source: invalid reference, unknown scheme "oci" in "oci://ghcr.io/casey-robertson-paypal/dependabot-helm/db-base:1.0.0"
+ => bump db-base from 1.0.0 to 1.5.0 in /consumer
+
+    ± consumer/Chart.yaml
+    ~~~
+    --- /tmp/claude-502/original20260603-61852-dtczir	2026-06-03 21:09:19
+    +++ /tmp/claude-502/updated20260603-61852-gfi6sz	2026-06-03 21:09:19
+    @@ -11,5 +11,5 @@
+         version: ^1.0.0
+         repository: oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+       - name: db-base       # exact pin, highest published 1.5.0
+    -    version: 1.0.0
+    +    version: 1.5.0
+         repository: oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+    ~~~
+    2 insertions (+), 2 deletions (-)
+🌍 Total requests made: '0'
+Dry-run completed successfully.
