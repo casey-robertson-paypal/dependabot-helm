@@ -1,0 +1,7 @@
+version: 2
+updates:
+  - package-ecosystem: "helm"
+    directory: "/consumer"
+    schedule:
+      interval: "weekly"
+    versioning-strategy: increase-if-necessary

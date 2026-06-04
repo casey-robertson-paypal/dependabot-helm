@@ -1,0 +1,15 @@
+apiVersion: v2
+name: consumer-service
+description: Consumes the producer charts via OCI with varied version constraints
+type: application
+version: 0.1.0
+dependencies:
+  - name: app-base      # ^1.0.0, highest published 1.0.5 -> IN range
+    version: ^1.0.0
+    repository: oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+  - name: cron-base     # ^1.0.0, highest published 2.0.0 -> OUT of range
+    version: ^1.0.0
+    repository: oci://ghcr.io/casey-robertson-paypal/dependabot-helm
+  - name: db-base       # exact pin, highest published 1.5.0
+    version: 1.0.0
+    repository: oci://ghcr.io/casey-robertson-paypal/dependabot-helm
