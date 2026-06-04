@@ -3,6 +3,11 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   dry-run:
     runs-on: ubuntu-latest
@@ -11,30 +16,46 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: dependabot-helm
+
       - name: Checkout dependabot-core branch
         uses: actions/checkout@v4
         with:
           repository: casey-robertson-paypal/dependabot-core
           ref: casey/helm-versioning-strategy
           path: dependabot-core
-      - name: Set up Ruby
+
+      - name: Set up Ruby + bundle (dependabot-core root Gemfile)
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.4.8"
+          bundler-cache: true
+          working-directory: dependabot-core
+
       - name: Install helm
         uses: azure/setup-helm@v4
+
       - name: Install oras
         uses: oras-project/setup-oras@v1
-      - name: Bundle helm gem
-        working-directory: dependabot-core/helm
-        run: bundle install
+
+      - name: Install regctl
+        run: |
+          curl -fsSL https://github.com/regclient/regclient/releases/latest/download/regctl-linux-amd64 -o /usr/local/bin/regctl
+          chmod +x /usr/local/bin/regctl
+
+      - name: Log in to GHCR (for OCI chart resolution)
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login ghcr.io -u ${{ github.actor }} --password-stdin
+          echo "${{ secrets.GITHUB_TOKEN }}" | oras login ghcr.io -u ${{ github.actor }} --password-stdin
+
       - name: Run verify matrix
         working-directory: dependabot-helm
         env:
           LOCAL_GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEPENDABOT_CORE: ${{ github.workspace }}/dependabot-core
         run: ./verify.sh
+
       - name: Upload transcripts
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: dry-run-transcripts

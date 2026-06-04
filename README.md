@@ -68,6 +68,23 @@ The **verify** workflow (Actions tab, or `workflow_dispatch`) checks out the
 branch, installs the toolchain, runs `verify.sh`, and uploads the transcripts as
 a build artifact.
 
+## Reading the transcripts
+
+Each `transcripts/<strategy>.txt` shows, per dependency, the resolved latest
+version and the proposed `Chart.yaml` diff. Two log lines are expected and
+harmless:
+
+- `Error adding/updating Helm repository: ... is not a valid chart repository`
+  — Dependabot tries `helm repo add` first; for OCI registries that's expected
+  to fail, and it falls back to `oras repo tags` (which succeeds — see the
+  `Highest valid OCI tag ...` line right after).
+- A `regctl`-related note only affects release-date metadata (cooldown), not the
+  version decision.
+
+Under `bump_versions_if_necessary` and `widen_ranges`, **app-base has no diff at
+all** — its `^1.0.0` already allows the latest `1.0.5`, so no PR is proposed.
+That is the behavior this repo exists to demonstrate.
+
 ## For dependabot-core maintainers
 
 This repo is intended as a ready-made public fixture for reviewing
