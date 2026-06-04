@@ -68,6 +68,16 @@ The **verify** workflow (Actions tab, or `workflow_dispatch`) checks out the
 branch, installs the toolchain, runs `verify.sh`, and uploads the transcripts as
 a build artifact.
 
+## For dependabot-core maintainers
+
+This repo is intended as a ready-made public fixture for reviewing
+[dependabot/dependabot-core#15216](https://github.com/dependabot/dependabot-core/issues/15216).
+If you'd like to confirm the behavior with your own tooling (e.g. a custom
+updater image built from the branch, as was done for the `go.work` PR via a
+dedicated test repo), point it at `casey-robertson-paypal/dependabot-helm`,
+directory `/consumer`, with `versioning-strategy: increase-if-necessary`. The
+committed `transcripts/` and the **verify** workflow show the expected results.
+
 ## Republishing / new scenarios
 
 Edit the version lists in `publish.sh` (e.g. add `1.0.6` or `3.0.0`) and re-run
