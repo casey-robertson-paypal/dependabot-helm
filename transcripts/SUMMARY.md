@@ -7,3 +7,5 @@ Repo `casey-robertson-paypal/dependabot-helm`, directory `/consumer`. "no change
 | `app-base` | `^1.0.0` | `^1.0.5` | no change | no change |
 | `cron-base` | `^1.0.0` | `^2.0.0` | `^2.0.0` | `^2.0.0` |
 | `db-base` | `1.0.0` | `1.5.0` | `1.5.0` | `1.5.0` |
+| `web-base` | `~1.2.0` | `~1.2.9` | no change | no change |
+| `api-base` | `>=1.0.0 <2.0.0` | `>=1.0.0 <3.0.0` | `>=1.0.0 <3.0.0` | `>=1.0.0 <3.0.0` |

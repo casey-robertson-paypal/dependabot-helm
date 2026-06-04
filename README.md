@@ -29,6 +29,8 @@ resolution → file update → proposed change), for all three strategies.
 | `app-base` | `1.0.0`, `1.0.5` | `1.0.5` |
 | `cron-base` | `1.0.0`, `2.0.0` | `2.0.0` |
 | `db-base` | `1.0.0`, `1.5.0` | `1.5.0` |
+| `web-base` | `1.2.0`, `1.2.9` | `1.2.9` |
+| `api-base` | `1.0.0`, `1.5.0`, `2.5.0` | `2.5.0` |
 
 ## Consumer constraints + expected results
 
@@ -39,6 +41,8 @@ resolution → file update → proposed change), for all three strategies.
 | app-base | `^1.0.0` | 1.0.5 (in range) | PR → `^1.0.5` | **no PR** ⭐ | **no PR** |
 | cron-base | `^1.0.0` | 2.0.0 (out of range) | PR → `^2.0.0` | PR → `^2.0.0` | PR → `^2.0.0` |
 | db-base | `1.0.0` | 1.5.0 | PR → `1.5.0` | PR → `1.5.0` | PR → `1.5.0` |
+| web-base | `~1.2.0` | 1.2.9 (in range) | PR → `~1.2.9` | **no PR** ⭐ | **no PR** |
+| api-base | `>=1.0.0 <2.0.0` | 2.5.0 (out of range) | PR → `>=1.0.0 <3.0.0` | PR → `>=1.0.0 <3.0.0` | PR → `>=1.0.0 <3.0.0` |
 
 ⭐ The headline behavior: an in-range patch produces **no PR** under
 `increase-if-necessary`/`widen`, instead of being exact-pinned as Dependabot
