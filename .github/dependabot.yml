@@ -1,3 +1,4 @@
+# re-validation trigger 2026-07-31: confirm hosted schema accepts versioning-strategy for helm
 version: 2
 updates:
   - package-ecosystem: "helm"
